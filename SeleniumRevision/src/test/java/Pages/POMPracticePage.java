@@ -13,53 +13,68 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class POMPracticePage {
 
+
 	static WebElement element=null;
 
 
-	public static WebElement First_name(WebDriver driver)
+	public static WebElement First_Name(WebDriver driver)
 	{
+
 		element=driver.findElement(By.name("RESULT_TextField-1"));
 		return element;
 	}
 
-	public  static WebElement Last_name(WebDriver driver)
+	public static WebElement Last_Name(WebDriver driver)
 	{
 
 		element=driver.findElement(By.name("RESULT_TextField-2"));
 		return element;
-
 	}
-	public  static WebElement Phone(WebDriver driver)
+
+	public static WebElement Mobile(WebDriver driver)
 	{
+
 		element=driver.findElement(By.id("RESULT_TextField-3"));
 		return element;
-
 	}
 
-	public  static WebElement Country(WebDriver driver)
+	public static WebElement Country(WebDriver driver)
 	{
+
 		element=driver.findElement(By.id("RESULT_TextField-4"));
 		return element;
-
 	}
 
-	public  static WebElement City(WebDriver driver) 
+	public static WebElement City(WebDriver driver)
 	{
 
 		element=driver.findElement(By.id("RESULT_TextField-5"));
 		return element;
 	}
-
-	public  static WebElement Email(WebDriver driver)
+	public static WebElement Email(WebDriver driver)
 	{
 
 		element=driver.findElement(By.id("RESULT_TextField-6"));
 		return element;
-
 	}
+	
+	public static WebElement Upload(WebDriver driver)
+	{
+
+		element=driver.findElement(By.id("RESULT_FileUpload-10"));
+		return element;
+	}
+	
+	
+
+
+
 
 
 }
+
+
+
 
 
 
